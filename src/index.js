@@ -20,6 +20,9 @@ app.get("/", (req, res) => {
   res.json({ message: "API is working!" });
 });
 
+app.get('/health', (req, res) => {
+    res.status(200).send('OK');
+});
 // Database Connection (Only if using MongoDB)
 if (process.env.MONGO_URI) {
     mongoose
