@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 });
 
 app.get('/health', (req, res) => {
-    res.status(200).send('OK');
+    res.status(200).send('OK123');
 });
 // Database Connection (Only if using MongoDB)
 if (process.env.MONGO_URI) {
